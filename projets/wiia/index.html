@@ -1,0 +1,88 @@
+<!--Dernière édition : 18/12/2020-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="icon" type="image/png" href="../../style/miniature.png"/>
+	<link rel="stylesheet" type="text/css" href="../../style/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+	<title>WIIA - Paul Nautré</title>
+</head>
+<body>
+
+	<!---------------EN-TETE------------------>
+	<header class = entete>
+
+		<img src="logo.png" class="photoDescription" alt="Logo WIIA">
+		
+		<div class = description>
+
+			
+			<h1>What Is It About,<br> Script d'exploration de Wikipédia - Projet personnel</h1>
+		
+			<p>	
+				WIIA est un script python récursif relativement simple qui explore Wikipédia: on entre un mot et un niveau de profondeur n, le programme trouve la page wikipédia correspondante au mot puis, de là, explore les pages linkées sur celle ci, puis les pages linkées sur celles-ci... et ce n fois. A l'issue, le programme retourne une liste de mots avec, pour chacun, un taux de correspondance en fonction de la redondance de ce mot dans le processus d'exploration. Cela simule un processus de pensée par associations dans lequel l'expérience est remplacé par la structure du site wikipédia: Pour le mot "Coca Cola" par exemple, on aura une correspondance importante avec "soda", une correspondance moyenne avec "États Unis", une correspondance plus faible avec "Père Noël", etc.<br>
+				Après quelques tests, j'ai remarqué que certains mots revenaient anormalement souvent. C'était le cas de "ISBN", qui est un système d'identification de livre et qui apparaît systématiquement dans la section référence des pages wikipédia. J'ai donc développé un second script, basé sur le premier, qui trouvait ce type d'aberration statistique et qui les blacklistait. Un résultat amusant, sur une recherche pour laquelle j'avais choisi un facteur d'élimination trop élevé, le programme avait blacklisté "États Unis". <br>
+                Ce projet était intéressant mais le défaut majeur de mon script était son temps d'exécution très long. Je prévois de revenir dessus pour améliorer cet aspect.
+
+			</p>
+
+		</div>
+	
+	</header>
+	
+
+	<!----------------Corps-------------------->
+	<div class = corps>
+	
+		<section class = book>	
+		
+			<article class = techno>
+
+				<h3>Technologies utilisées</h3>
+			
+				<ul>
+
+					<li> 
+					Python 3.7
+					</li>
+					<li> 
+					librairies Wikipedia, numpy, collections
+					</li>
+
+				</ul>
+
+			</article>
+		
+			<article class = competence>
+
+			<h3>Compétences transversales</h3>
+			
+			<ul>
+				<li> 
+				Rédaction d'un suivi de projet en anglais sur Github
+				</li>
+
+			</ul>
+
+		</article>
+
+		</section>
+
+		<section class = document>
+			
+			<article class  = document>
+				<h3>Documents et liens associés</h3>
+				<ul>
+					<li><a href= "https://github.com/loremipsumdsa/WIIA" target = "_blank"> dépot GitHub du projet</a></li>
+				</ul>
+
+			</article>
+
+		</section>
+
+		<a href = "../../index.html"> Retour à la page principale </a> 
+	</div>
+	
+</body>
+</html>
