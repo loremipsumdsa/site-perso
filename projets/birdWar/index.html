@@ -1,0 +1,89 @@
+<!--Dernière édition : 25/07/2022-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="icon" type="image/png" href="../../style/miniature.png"/>
+	<link rel="stylesheet" type="text/css" href="../../style/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+	<title>Taquin - Paul Nautré</title>
+</head>
+<body>
+
+	<!---------------EN-TETE------------------>
+	<header class = entete>
+
+		<img src="logo.gif" class="photoDescription" alt="Jeu BirdWar">
+		
+		<div class = description>
+
+			
+			<h1>Bird War - apprentissage par renforcement,<br> Projet de fin d'année - 1ère année de cycle ingénieur </h1>
+		
+			<p>	
+				Le projet de fin de première année s'est déroulé en deux phases : nous avions une première semaine pour nous familiariser avec le développement de jeu de type arcade avec la SDL2, puis une deuxième semaine pour proposer un jeu et implémenter une solution d'apprentissage par renforcement sur celui ci.<br>
+				Avec mes camarades Julien et Lisa, nous avons proposé un jeu d'esquive : le joueur controlait l'oiseau (qui partait du coin inférieur gauche) et devait déplacer celui ci sur la clé (coin superieur droit) en se prenant le moins de missiles possibles. Les mouvement possibles etaient 'avant' et 'haut'<br>
+				Pour la suite, notre programme devait apprendre à jouer par lui même. L'idée était que initialement, le programme ignorait les règles du jeu. Il disposait seulement des controles  et d'une perception de sa situation, c'est à dire qu'il connaissait à chaque instant son état parmi une liste d'états définis à l'avance par nous même. Ses choix étaient aléatoires dans un premier temps (phase d'exploration). Il recevait une punition pour chaque missile rencontré et une récompense pour chaque clé récupérée. Par rétropropagation de ces récompenses/punitions dans la suite de décision, il cumulait une connaissance de ce qu'était un bon choix dans un état donnée (maximisation de la récompense). Plus la connaissance cumulée était complètes, plus le programme pouvait s'appuyer dessus (phase d'exploitation). Après quelques milliers de partie jouée, le programme pouvait ainsi atteindre la clé sans toucher aucun missile <br>
+				Nous avons obtenu la mention très bien pour ce projet.
+
+
+			</p>
+
+		</div>
+	
+	</header>
+	
+
+	<!----------------Corps-------------------->
+	<div class = corps>
+	
+		<section class = book>	
+		
+			<article class = techno>
+
+				<h3>Technologies utilisées</h3>
+			
+				<ul>
+
+					<li> 
+					C, bibliotèque SDL2
+					</li>
+					<li>
+					Makefile, compilation automatisée
+					</li>
+
+				</ul>
+
+			</article>
+		
+			<article class = competence>
+
+			<h3>Compétences transversales</h3>
+			
+			<ul>
+				<li> Travail en trinôme</li>
+				<li> Soutenance orale</li>
+			</ul>
+
+		</article>
+
+		</section>
+
+		<section class = document>
+			
+			<article class  = document>
+				<h3>Documents et liens associés</h3>
+				<ul>
+					<li><a href= "https://gitlab.isima.fr/groupe-35/bird-war" target = "_blank"> dépot GitLab du projet</a></li>
+				</ul>
+
+			</article>
+
+		</section>
+
+		<a href = "../../index.html"> Retour à la page principale </a>
+
+	</div>
+	
+</body>
+</html>
