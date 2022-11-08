@@ -32,7 +32,6 @@ img{
 	padding-top: 0;
 	display: flex;
 	justify-content: normal;
-	background-color:  #2e484e   ;
 	align-items: center;
 	background-color: #1C3034 ;
 	color : white;
@@ -76,8 +75,7 @@ article
 {
 	display: flex;
 	justify-content: space-around;
-	/*background-color:  #96a8b0;*/
-	 background-color: #1d4851;
+	 background-color: #1C3034;
 	 color : white;
 
 
