@@ -1,0 +1,89 @@
+<!--Last edit: 09/11/2023-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="icon" type="image/png" href="../../style/miniature.png"/>
+	<link rel="stylesheet" type="text/css" href="../../style/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+	<title>Bird War - Paul Nautré</title>
+</head>
+<body>
+
+
+<!---------------HEADER------------------>
+<header class="entete">
+
+	<img src="logo.gif" class="photoDescription" alt="BirdWar Game">
+	
+	<div class="description">
+
+		
+		<h1>Bird War - Reinforcement Learning,<br> End-of-year Project - 1st Year of Engineering Program</h1>
+	
+		<p>	
+			The end-of-first-year project took place in two phases: we had the first week to get familiar with arcade game development using SDL2, and then the second week to propose a game and implement a reinforcement learning solution on it.<br>
+			With my classmates Julien and Lisa, we proposed an evasion game: the player controlled the bird (starting from the lower left corner) and had to move it to the key (upper right corner) while avoiding as many missiles as possible, with possible movements being 'forward' and 'up'.<br>
+			For the next step, our program had to learn to play by itself. The idea was that initially, the program was unaware of the game rules. It only had the controls and a limited perception of its situation, meaning it knew its state at each moment from a predefined list of states we defined. Its choices were random initially (exploration phase). It received a penalty for each encountered missile and a reward for each collected key. Through the propagation of these rewards/penalties in subsequent decisions, it accumulated knowledge of what was a good choice in a given state (reward maximization). The more complete the cumulative knowledge, the more the program could rely on it (exploitation phase). After playing thousands of rounds, the program could reach the key without touching any missile.<br>
+			We received a very good grade for this project.
+
+		</p>
+
+	</div>
+
+</header>
+
+
+<!----------------Body-------------------->
+<div class="corps">
+
+	<section class="book">	
+	
+		<article class="techno">
+
+			<h3>Technologies Used</h3>
+		
+			<ul>
+
+				<li> 
+				C, SDL2 library
+				</li>
+				<li>
+				Makefile, automated compilation
+				</li>
+
+			</ul>
+
+		</article>
+	
+		<article class="competence">
+
+		<h3>Transversal Skills</h3>
+		
+		<ul>
+			<li> Teamwork</li>
+			<li> Oral presentation</li>
+		</ul>
+
+	</article>
+
+	</section>
+
+	<section class="document">
+		
+		<article class="document">
+			<h3>Documents and Associated Links</h3>
+			<ul>
+				<li><a href="https://gitlab.isima.fr/groupe-35/bird-war" target="_blank">Project GitLab Repository</a></li>
+			</ul>
+
+		</article>
+
+	</section>
+
+	<a href="../../index.html"> Return to the main page </a>
+
+</div>
+
+</body>
+</html>

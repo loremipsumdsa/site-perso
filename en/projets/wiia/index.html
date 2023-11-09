@@ -1,0 +1,88 @@
+<!--Last edit: 09/11/2023-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="icon" type="image/png" href="../../style/miniature.png"/>
+	<link rel="stylesheet" type="text/css" href="../../style/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+	<title>WIIA - Paul Nautré</title>
+</head>
+<body>
+
+<!---------------HEADER------------------>
+<header class="entete">
+
+	<img src="logo.png" class="photoDescription" alt="WIIA Logo">
+	
+	<div class="description">
+
+		
+		<h1>What Is It About,<br> Wikipedia Exploration Script - Personal Project</h1>
+	
+		<p>	
+			WIIA is a relatively simple recursive Python script that explores Wikipedia: you enter a word and a depth level n, the program finds the corresponding Wikipedia page for the word and then explores the linked pages on that page, then the linked pages on those... and so on n times. In the end, the program returns a list of words with, for each, a matching rate based on the redundancy of that word in the exploration process. This simulates a process of associative thinking where experience is replaced by the structure of the Wikipedia site: For the word "Coca Cola," for example, there will be a significant match with "soda," an average match with "United States," a lower match with "Santa Claus," and so on.<br>
+			After a few tests, I noticed that some words were abnormally frequent. This was the case with "ISBN," which is a book identification system and appears systematically in the reference section of Wikipedia pages. So, I developed a second script, based on the first one, which found this type of statistical aberration and blacklisted them. An amusing result, on a search for which I had chosen too high an elimination factor, the program had blacklisted "United States." <br>
+            This project was interesting, but the major flaw of my script was its very long execution time. I plan to revisit it to improve this aspect.
+
+		</p>
+
+	</div>
+
+</header>
+
+
+<!----------------BODY-------------------->
+<div class="corps">
+
+	<section class="book">	
+	
+		<article class="techno">
+
+			<h3>Technologies Used</h3>
+		
+			<ul>
+
+				<li> 
+				Python 3.7
+				</li>
+				<li> 
+				Wikipedia, numpy, collections libraries
+				</li>
+
+			</ul>
+
+		</article>
+	
+		<article class="competence">
+
+		<h3>Transversal Skills</h3>
+		
+		<ul>
+			<li> 
+			Writing a project follow-up in English on Github
+			</li>
+
+		</ul>
+
+	</article>
+
+	</section>
+
+	<section class="document">
+		
+		<article class="document">
+			<h3>Documents and Associated Links</h3>
+			<ul>
+				<li><a href="https://github.com/loremipsumdsa/WIIA" target="_blank">Project GitHub Repository</a></li>
+			</ul>
+
+		</article>
+
+	</section>
+
+	<a href="../../index.html"> Return to the main page </a> 
+</div>
+
+</body>
+</html>
